@@ -1,0 +1,177 @@
+/*Header styles*/
+header {
+    line-height: 50px;
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+#logoContainer {
+    float: left;
+}
+
+#logoImage {
+    vertical-align: middle;
+    width: 190px;
+    height: 30px;
+}
+
+#title {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: larger;
+}
+
+/*Menu styles*/
+aside {
+    border: 1px solid;
+    float: left;
+    height: 665px;
+    width: 15%;
+    margin-top: 1px;
+}
+
+.menu {
+    border: 1px solid;
+    margin: 1px;
+    padding: 5px;
+    text-align: center;
+}
+
+.selected {
+    background: #eeeeee;
+}
+
+/*Main content styles*/
+article {
+    border: 1px solid;
+    margin-left: 15.3%;
+    margin-top: 1px;
+    height: 665px;
+}
+
+.post {
+    border: 1px solid;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+}
+
+.postHeader {
+    text-align: center;
+}
+
+.description {
+    margin-left: 420px;
+    margin-right: 5px;
+}
+
+.descriptionText {
+    text-align: justify;
+    overflow: hidden;
+    height: 235px;
+}
+
+.postImage {
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+/*Footer styles*/
+footer {
+    border: 1px solid;
+    margin-top: 1px;
+    line-height: 50px;
+}
+
+#footerCopyright {
+    width: 600px;
+    text-align: center;
+    float: left;
+}
+
+#footerSocial {
+    text-align: center;
+}
+
+/*Media styles*/
+/*Tablets and smartphones*/
+@media screen and (max-width: 800px) {
+    /*Header*/
+    header {
+        text-align: center;
+        line-height: 40px;
+        width: auto;
+    }
+
+    #logoContainer {
+        float: none;
+    }
+
+    /*Menu*/
+    aside {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+
+    /*Main content styles*/
+    article {
+        margin-left: 0;
+        height: auto;
+    }
+
+    .postImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .post {
+        height: auto;
+    }
+
+    .description {
+        margin-left: 0;
+        margin-top: 68%;
+    }
+
+    /*Footer styles*/
+    #footerCopyright {
+        width: auto;
+        text-align: center;
+        float: none;
+        height: 25px;
+    }
+}
+
+/*Smartphones with low resolution*/
+@media screen and (max-height: 480px) {
+    /*Header*/
+    header {
+        line-height: 30px;
+    }
+
+    #logoImage {
+        width: 40%;
+        height: 12%;
+    }
+}
+
+/*Title and copyright font size*/
+@media screen and (max-width: 550px) {
+    #footerCopyright {
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #title {
+        font-size: 11pt;
+    }
+
+    #footerCopyright {
+        font-size: 6.7pt;
+    }
+}
